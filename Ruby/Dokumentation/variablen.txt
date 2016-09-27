@@ -9,7 +9,7 @@ Beispiel:
 
 Besonderheiten von Strings:
 	Konkatenieren:
-		var= "Strink"
+		var= "String"
 		puts "Dies ist eine " +var
 
 	Ausgaben von Ruby-Code im String:
