@@ -22,7 +22,7 @@ end
 
 
 2.times do
-	puts "#{name4.ljust(20, ".")} #{health3} health"
+	puts "#{name4.ljust(40, ".")} #{health3} health"
 end
 
 puts "Players: \n\t #{name1} \n\t #{name2} \n\t #{name3}"
