@@ -23,3 +23,34 @@ Methoden von Arrays
 		seats.empty?
 	Löschen von Elementen
 		seats.delete_at(3)
+
+
+Iterations-Methoden: 			Iterartion = durchlaufen lassen, Stück für Stück das Array durchlaufen lassen
+
+var = %w(ich u du)
+
+var.each
+	Methode zum durchlaufen der einzelnen Elemente
+
+var.select
+	Mehtode, die Im Block einen boolschen Wert erwartet und bei true 
+	den Inhalt zurückgibt
+	var.select { |v| v.size > 1 }
+
+var.reject						# Macht das Gegenteil und nimmt alle Werte die Zurückgewiesen worden
+	Gegenteil von select: die zurückgewiesenen Werte werden gespreichert
+	ret = var.rejext {|v| v.size > 1}
+	ret enthält ['u']
+
+var.sort 
+	gibt ein sortiertes Array zurück
+
+
+
+
+
+
+
+
+
+

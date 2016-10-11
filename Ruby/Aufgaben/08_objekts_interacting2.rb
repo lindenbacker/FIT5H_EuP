@@ -14,18 +14,14 @@ class Game
 		puts "There are #{@players.size} players in #{@title}:"
 		@players.each do |player|
   		puts player
-	end
-
-		@players.each do |player|
-  		puts player.health
-	end
+		end
 
 		@players.each do |player|
   			player.blam
   			player.w00t
   			player.w00t
-  			puts player
-	end
+  			puts player  #geht standart auf die def to_s
+		end
 	end
 end
 
@@ -66,7 +62,15 @@ player3 = Player.new("Curly", 125)
 players = [player1, player2, player3]
 
 game1 = Game.new("Knuckelheads")
-game1.add_player(player1)
-game1.add_player(player2)
-game1.add_player(player3)
+
+players.each do |player|
+	game1.add_player(player)
+end
+
+
+
+
+#game1.add_player(player1)
+#game1.add_player(player2)
+#game1.add_player(player3)
 game1.play
