@@ -10,16 +10,23 @@ class Calculator
 
 	def add
 		@erg = @zahl1 + @zahl2
-		puts "Das Ergebnis lautet: #{@erg}"
+		puts "Das Ergebnis der addierung lautet: #{@erg}"
 	end
 
 	def subtract
 		@erg2 = @zahl1 - @zahl2
-		puts "Das Ergebnis lautet: #{@erg2}"
+		puts "Das Ergebnis der subraktion lautet: #{@erg2}"
 	end
+
+	def hendrik
+		@erg3 = @zahl1 * @zahl2
+		puts "Das Ergebnis der Multiplikation lautet: #{@erg3}"
+	end
+
 end
 
 obj = Calculator.new(100, 20)
 #obj.add = ""
 puts obj.add
 puts obj.subtract
+puts obj.hendrik

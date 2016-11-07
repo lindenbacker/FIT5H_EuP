@@ -1,4 +1,4 @@
-def say_hello(name="Hendrik", health=100)
+def say_hello(name="Hendrik", health=1000)
 	"Ich bin #{name} mit einem Wert von #{health} um #{time}!"
 
 end

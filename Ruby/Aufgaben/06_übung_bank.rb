@@ -12,7 +12,7 @@ class Customer
 
 
 	def print_adress
-		"Konto:".ljust(15, ".") + @bank_account.to_s + "\n" +
+		"Konto:".ljust(15, ".") + "#{@bank_account}" + "\n" + 
 		"Name:".ljust(15, ".") + "#{@firstname} #{lastname}" + "\n" +
 		"Strasse:".ljust(15, ".") + "#{street}" + "\n" + 
 		"Ort:".ljust(15, ".") + "#{city}"
@@ -24,7 +24,7 @@ class Customer
 
 end
 
-obj = Customer.new("9999", "Lodgz")
+obj = Customer.new(8888,"Lodgz")
 obj.firstname = "Theo"
 obj.street = "Hermelinweg 7"
 obj.city = "Hamburg"

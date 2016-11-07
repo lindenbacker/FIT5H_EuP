@@ -32,3 +32,8 @@ player2 = Player.new("Steander")
 	puts player2.say_hello
 player2.w00t(50)
 	puts player2.say_hello
+
+player3 = Player.new("Heribert")
+	puts player3.say_hello
+player3.blam(100)
+	puts player3.say_hello

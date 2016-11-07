@@ -18,7 +18,7 @@ class Game
     end
 
 
-	end
+	end	
 end
 
 class Player
@@ -28,6 +28,26 @@ class Player
 		@health = phealth
 		#puts "#{@name} #{@health}"
 	end
+
+end
+
+player1 = Player.new("Hendrik", 200)
+player2 = Player.new("Marianne", 200)
+
+
+
+obj = Game.new("Knuckleheads")
+obj.add_player("Hendrik")
+obj.add_player("Kim")
+obj.add_player("Valid")
+obj.add_player(player1)
+obj.add_player(player2)
+obj.ausgabe
+
+
+
+
+
 
 
 
@@ -46,17 +66,3 @@ class Player
 #		@health = @health - value
 #		@zusatz = "#{@name} got w00ted"
 #	end
-end
-
-player1 = Player.new("Hendrik", 200)
-player2 = Player.new("Marianne", 200)
-
-
-
-obj = Game.new("Knuckleheads")
-obj.add_player("Hendrik")
-obj.add_player("Kim")
-obj.add_player("Valid")
-obj.add_player(player1)
-obj.add_player(player2)
-obj.ausgabe

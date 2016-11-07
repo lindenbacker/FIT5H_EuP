@@ -44,15 +44,19 @@ class Movie
   def thumbs_down
     @rank -= 1
   end
-  
-  def to_s
-    "#{@title} has a rank of #{@rank}."
+
+  def ausgabe
+    "#{@title} has a rank of #{@rank}"
   end
+  
+ # def to_s
+  #  "#{@title} has a rank of #{@rank}."
+  #end
 end
 
 movie1 = Movie.new("Goonies schulte", 10)
 puts movie1.title
-
+puts movie1.ausgabe
 
 
 
