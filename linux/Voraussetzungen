@@ -1,0 +1,14 @@
+Voraussetzungen
+	SheBang-Zeile:
+	Die erste Zeie enthält den pfad zum interpretierenden programmn
+	#!/bin
+	/bash
+
+	Berechtigöungen
+		Damit eine Datei als Prgramm ausgeführt werder kannm muss das Exevute Bit gesetzt sein , dh in den Berechtigungen wird ein x angezeigt
+		chmod u#x test.sh
+
+		Aufruf
+		Es ist eine absolute Pfadangebe Notwenidg:;
+		./test.sh
+			Aufruf aus dem aktuellen Ordner

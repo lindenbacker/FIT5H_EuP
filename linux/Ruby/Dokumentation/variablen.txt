@@ -1,0 +1,21 @@
+Ruby ist eine interpretierende Sprach, d.h. es 
+keine Datentyp-Festlegung der Variablen nötig
+
+Der Interpreter erkennt an dem zugewiesenen Wert um welchen Datentyp es sich handelt.
+
+Beispiel:
+	var = "Ein Strink"		#car ist ein Objekt der Klasse String
+	var.class 				#erzeugt Ausgabe String, also den Datentyp
+
+Besonderheiten von Strings:
+	Konkatenieren:
+		var= "String"
+		puts "Dies ist eine " +var
+
+	Ausgaben von Ruby-Code im String:
+		Das Konstrukt: "Zeichenkette #{ruby code}" ermöglicht es in einer Zeichenkette Code auszuführen und Variablen einzufügen.
+
+	Beispiel:
+			movie = "Goonies"
+			rank = "10"
+			puts "#{movie} hat am #{Time.now} das Ranking #{rank}"
