@@ -1,0 +1,10 @@
+<h1>Movies</h1>
+
+<ul>
+	<% @movies.each do |movie| %>
+		<li> Title: <%= movie.title %>,
+			 IMDB: <%= movie.rating %>,
+			 Gross: <%= movie.total_gross %>
+		</li>
+	<% end %>
+</ul>
